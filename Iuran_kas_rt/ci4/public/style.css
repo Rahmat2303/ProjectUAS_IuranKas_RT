@@ -1,0 +1,148 @@
+/* import google font */
+/* import google font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+  font-size: 100%;
+  font-family: "open sans", sans-serif;
+  color: #5a5a5a;
+}
+#container {
+  width: 980px;
+  margin: 0 auto;
+  box-shadow: 0 0 1em #cccccc;
+}
+/* header */
+header {
+  padding: 20px;
+  background-color: #e5caf7;
+}
+header h1 {
+  margin: 20px 10px;
+  color: #4d4d4d;
+  text-align: center;
+}
+
+/* Navigasi */
+.navigasi {
+  display: block;
+  background-color: #771ac4;
+  margin-bottom: 10px;
+}
+.navigasi a {
+  padding: 15px 30px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navigasi a.active,
+.navigasi a:hover {
+  background-color: #d49edf;
+  color: #ffffff;
+}
+/* tabel */
+.tabel {
+  margin: 23px;
+  background-color: #e5caf7;
+}
+/* footer */
+footer {
+  clear: both;
+  background-color: #771ac4;
+  padding: 5px;
+  color: #eee;
+  text-align: center;
+}
+footer p {
+  margin-bottom: 0px;
+}
+
+#tombolTambah {
+  background-color: #771ac4;
+  color: #ffffff;
+}
+.tombolTambah {
+  color: #ffffff;
+  text-decoration: none;
+}
+#tombolTambah:hover {
+  background-color: #d49edf;
+  border: 1px solid #771ac4;
+}
+.tombolTambah:hover {
+  color: #ffffff;
+}
+/* form tambah */
+h2 {
+  margin: 15px;
+}
+.formTambah {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.inputan {
+  width: 250px;
+}
+/* style login */
+#login-wrapper {
+  width: 600px;
+  margin: auto;
+  margin-top: 50px;
+  padding-top: 5px;
+  box-shadow: 0 0 2em #cccccc;
+}
+.signIn {
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+/* paginasi */
+nav {
+  display: inline-block;
+  background-color: #ffffff;
+  margin-left: 19px;
+}
+nav a {
+  background-color: #771ac4;
+  padding: 10px 20px;
+  margin: 3px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10%;
+}
+nav a.active,
+nav a:hover {
+  background-color: #d49edf;
+  color: #ffffff;
+  border: 1px solid #771ac4;
+}
+
+.atas li {
+  display: inline-block;
+}
+.atas li form {
+  margin-left: 492px;
+}
+.atas form {
+  margin-left: 712px;
+}
+.tabelTotal {
+  text-align: center;
+  font-weight: bold;
+}
+.tblTotal {
+  font-weight: bold;
+}
