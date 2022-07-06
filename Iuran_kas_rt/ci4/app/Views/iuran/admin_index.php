@@ -3,7 +3,7 @@
 <div class="atas">
     <li>
         <div id="tombolTambah" class="btn mx-4">
-            <a class="tombolTambah" href="<?= base_url('admin/iuran/add'); ?>">Tambah Data Warga</a>
+            <a class="tombolTambah" href="<?= base_url('admin/iuran/add'); ?>">Tambah Iuran Warga</a>
         </div>
     </li>
     <li>

@@ -1,10 +1,11 @@
 <?= $this->include('template/admin_header'); ?>
 
+<h3 class="mx-4">Total Jumlah Kas Warga</h3>
 <div class="tabel">
     <table border="2" class="table table-bordered table-hover">
         <thead>
             <tr>
-                <th>ID</th>
+                <th>No</th>
                 <th>Nama Warga</th>
                 <th>NIK</th>
                 <th>Bulan</th>
