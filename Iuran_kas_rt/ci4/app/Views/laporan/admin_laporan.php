@@ -1,6 +1,6 @@
 <?= $this->include('template/admin_header'); ?>
 
-<h3 class="mx-4">Total Jumlah Kas Warga</h3>
+<h4 class="mx-4" style="text-align: center">Total Jumlah Kas Warga</h4>
 <div class="tabel">
     <table border="2" class="table table-bordered table-hover">
         <thead>

@@ -70,6 +70,11 @@ footer p {
 #tombolTambah {
   background-color: #771ac4;
   color: #ffffff;
+  margin-left: 165px;
+}
+#tombolTambahan {
+  background-color: #771ac4;
+  color: #ffffff;
 }
 .tombolTambah {
   color: #ffffff;
@@ -127,7 +132,6 @@ nav a.active,
 nav a:hover {
   background-color: #d49edf;
   color: #ffffff;
-  border: 1px solid #771ac4;
 }
 
 .atas li {

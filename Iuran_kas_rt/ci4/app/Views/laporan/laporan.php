@@ -1,6 +1,6 @@
 <?= $this->include('template/header'); ?>
 
-<h3 class="mx-4">Total Jumlah Kas Warga</h3>
+<h4 style="text-align: center" class="mx-4">Total Jumlah Kas Warga</h4>
 <div class="tabel">
     <table border="2" class="table table-bordered table-hover">
         <thead>

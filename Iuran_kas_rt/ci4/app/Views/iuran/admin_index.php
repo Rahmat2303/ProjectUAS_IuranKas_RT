@@ -1,5 +1,6 @@
 <?= $this->include('template/admin_header'); ?>
 
+<h4 style="text-align: center">Data Iuran Warga RT 008</h4>
 <div class="atas">
     <li>
         <div id="tombolTambah" class="btn mx-4">
@@ -40,7 +41,7 @@
             <td><?= $row['jumlah']; ?></td>
             <td><?= $row['warga_id']; ?></td>
             <td>
-                <a id="tombolTambah" class="btn" href="<?= base_url('/admin/iuran/edit/' .$row['id']);?>">Ubah</a>
+                <a id="tombolTambahan" class="btn" href="<?= base_url('/admin/iuran/edit/' .$row['id']);?>">Ubah</a>
                 <a class="btn btn-danger" onclick="return confirm('Yakin menghapus data?');" href="<?= base_url('/admin/iuran/delete/' .$row['id']);?>">Hapus</a>
             </td>
         </tr>

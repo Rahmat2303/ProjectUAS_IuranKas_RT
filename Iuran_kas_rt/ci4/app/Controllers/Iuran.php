@@ -14,7 +14,7 @@ class Iuran extends BaseController
         $data = [
             'title' => $title,
             'q' => $q,
-            'iuran' => $model->join('warga', 'warga.warga_id=iuran.warga_id')->like('nama', $q)->paginate(2),
+            'iuran' => $model->join('warga', 'warga.warga_id=iuran.warga_id')->like('nama', $q)->paginate(4),
             'pager' => $model->pager,
         ];        
 
@@ -28,7 +28,7 @@ class Iuran extends BaseController
         $data = [
             'title' => $title,
             'q' => $q,
-            'iuran' => $model->join('warga', 'warga.warga_id=iuran.warga_id')->like('nama', $q)->paginate(2),
+            'iuran' => $model->join('warga', 'warga.warga_id=iuran.warga_id')->like('nama', $q)->paginate(4),
             'pager' => $model->pager,
         ];
 

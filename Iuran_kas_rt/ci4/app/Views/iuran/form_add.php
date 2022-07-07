@@ -1,25 +1,43 @@
 <?= $this->include('template/admin_header'); ?>
 
-<h2><?= $title; ?></h2>
+<h2 style="text-align: center"><?= $title; ?></h2>
 <form class="formTambah" action="" method="post">
-    <p>
-        <input class="inputan" type="text" name="keterangan" placeholder="Keterangan">
-    </p>
-    <p>
-        <input class="inputan" type="date" name="tanggal" placeholder="Tanggal">
-    </p>
-    <p>
-        <input class="inputan" type="text" name="bulan" placeholder="Bulan">
-    </p>
-    <p>
-        <input class="inputan" type="text" name="tahun" placeholder="Tahun">
-    </p>
-    <p>
-        <input class="inputan" type="text" name="jumlah" placeholder="Jumlah">
-    </p>
-    <p>
-        <input class="inputan" type="text" name="warga_id" placeholder="ID Warga">
-    </p>
+    <div class="form-group row my-1">
+        <label for="inputKeterangan" class="col-sm-2 col-form-label">Keterangan</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputKeterangan" name="keterangan" autofocus>
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <label for="inputTanggal" class="col-sm-2 col-form-label">Tanggal</label>
+        <div class="col-sm-9">
+            <input type="date" class="form-control" id="inputTanggal" name="tanggal">
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <label for="inputBulan" class="col-sm-2 col-form-label">Bulan</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputBulan" name="bulan">
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <label for="inputTahun" class="col-sm-2 col-form-label">Tahun</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputTahun" name="tahun">
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <label for="inputJumlah" class="col-sm-2 col-form-label">Jumlah</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputJumlah" name="jumlah">
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <label for="inputwarga_id" class="col-sm-2 col-form-label">Warga ID</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputwarga_id" name="warga_id">
+        </div>
+    </div>
     <p>
         <input type="submit" value="Tambah" class="btn" id="tombolTambah">
     </p>

@@ -14,7 +14,7 @@ class Warga extends BaseController
         $data = [
             'title' => $title,
             'q' => $q,
-            'warga' => $model->like('nama', $q)->paginate(2),
+            'warga' => $model->like('nama', $q)->paginate(4),
             'pager' => $model->pager,
         ];
 
@@ -28,7 +28,7 @@ class Warga extends BaseController
         $data = [
             'title' => $title,
             'q' => $q,
-            'warga' => $model->like('nama', $q)->paginate(2),
+            'warga' => $model->like('nama', $q)->paginate(4),
             'pager' => $model->pager,
         ];
 

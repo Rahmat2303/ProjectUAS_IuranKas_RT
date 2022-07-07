@@ -1,22 +1,50 @@
 <?= $this->include('template/admin_header'); ?>
 
-<h2><?= $title; ?></h2>
+<h2 style="text-align: center"><?= $title; ?></h2>
 <form class="formTambah" action="" method="post">
-    <p>
-        <input class="inputan" type="text" name="nik" value="<?= $data['nik']; ?>">
-    </p>
-    <p>
-        <input class="inputan" type="text" name="nama" value="<?= $data['nama']; ?>">
-    </p>
-    <p>
-        <input class="inputan" type="text" name="kelamin" value="<?= $data['kelamin']; ?>">
-    </p>
-    <p>
-        <textarea class="inputan" name="alamat" cols="30" rows="5"><?= $data['alamat']; ?></textarea>
-    </p>
-    <p>
-        <input class="inputan" type="text" name="no_rumah" value="<?= $data['no_rumah']; ?>">
-    </p>
+    <div class="form-group row my-1">
+        <label for="inputnik" class="col-sm-2 col-form-label">NIK</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputnik" name="nik" value="<?= $data['nik']; ?>" autofocus>
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <label for="inputnama" class="col-sm-2 col-form-label">Nama</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputnama" value="<?= $data['nama']; ?>" name="nama">
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <label for="inputjk" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputjk" value="<?= $data['kelamin']; ?>" name="kelamin">
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <label for="inputalamat" class="col-sm-2 col-form-label">Alamat</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputalamat" value="<?= $data['alamat']; ?>" name="alamat">
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <label for="inputno" class="col-sm-2 col-form-label">No Rumah</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputno" value="<?= $data['no_rumah']; ?>" name="no_rumah">
+        </div>
+    </div>
+    <div class="form-group row my-1">
+        <label class="col-sm-2 col-form-label">Status</label>
+        <div class="col-sm-9">
+            <select name="status" id="">
+                <option value="">--Pilih--</option>
+                <option value="1">Lajang</option>
+                <option value="2">Menikah</option>
+                <option value="3">Duda</option>
+                <option value="4">Janda</option>
+            </select>
+        </div>
+    </div>
+
     <p>
         <input type="submit" value="Tambah" class="btn" id="tombolTambah">
     </p>

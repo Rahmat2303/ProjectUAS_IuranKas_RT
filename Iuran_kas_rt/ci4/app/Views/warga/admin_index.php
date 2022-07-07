@@ -1,5 +1,6 @@
 <?= $this->include('template/admin_header'); ?>
 
+<h4 style="text-align: center">Data Warga RT 008</h4>
 <div class="atas">
     <li>
         <div id="tombolTambah" class="btn mx-4">
@@ -23,6 +24,7 @@
                 <th>Kelamin</th>
                 <th>Alamat</th>
                 <th>No. Rumah</th>
+                <th>Status</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -35,8 +37,9 @@
             <td><?= $row['kelamin']; ?></td>
             <td><?= $row['alamat']; ?></td>
             <td><?= $row['no_rumah']; ?></td>
+            <td><?= $row['status']; ?></td>
             <td>
-                <a id="tombolTambah" class="btn" href="<?= base_url('/admin/warga/edit/' .$row['warga_id']);?>">Ubah</a>
+                <a id="tombolTambahan" class="btn" href="<?= base_url('/admin/warga/edit/' .$row['warga_id']);?>">Ubah</a>
                 <a class="btn btn-danger" onclick="return confirm('Yakin menghapus data?');" href="<?= base_url('/admin/warga/delete/' .$row['warga_id']);?>">Hapus</a>
             </td>
         </tr>

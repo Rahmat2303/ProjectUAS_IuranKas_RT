@@ -1,4 +1,6 @@
 <?= $this->include('template/header'); ?>
+
+<h4 style="text-align: center">Data Warga RT 008</h4>
 <div class="atas">
         <form method="get" class="form-search">
                     <input type="text" name="q" value="<?= $q; ?>" placeholder="Cari Nama">
